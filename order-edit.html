@@ -12,7 +12,32 @@
     <main class="d-flex">
       {{> nav}}
       <section class="content p-4 flex-grow-1">
-        <!-- build your page content here — refer to _data.md for data -->
+      <h2>Edit Order</h2>
+        <hr />
+          <div class="mb-3">
+        <form class="d-flex flex-wrap w-75 gap-2">
+            <label for="tablenumber" class="form-label">Table Number</label>
+            <input id="tablenumber" type="number" class="form-control" value="12"/>
+          </div>
+        </form>
+        
+          <div class="mb-3">
+        <form class="d-flex flex-wrap w-75 gap-2">
+            <label for="notes" class="form-label">Notes</label>
+            <textarea class="form-control">No onions please</textarea>
+          </div>
+        </form>
+        <div class="d-flex flex-row justify-content-end w-100 gap-4">
+          <div class="d-flex justify-content-end mt-4">
+            <a href="/orders.html" class="btn btn-outline-primary me-2">Cancel</a>
+            <button type="submit" class="btn btn-primary">
+              <svg class="bi pe-none me-2" width="16" height="16" fill="#FFFFFF">
+                <use href="/assets/bootstrap-icons.svg#save" />
+              </svg>
+              Save order
+            </button>
+          </div>
+        </div>
       </section>
     </main>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
