@@ -12,7 +12,68 @@
     <main class="d-flex">
       {{> nav}}
       <section class="content p-4 flex-grow-1">
-        <!-- build your page content here — refer to _data.md for data -->
+        <form class="d-flex flex-wrap w-50 gap-2">
+          <div class="d-flex flex-row gap-4">
+            <div class="mb-3 w-50">
+              <label class="form-label" for="firstName">First Name</label>
+              <input id="firstName" class="form-control" type="text" placeholder="Enter first name" />
+            </div>
+
+            <div class="mb-3 w-50">
+              <label class="form-label" for="lastName">Last Name</label>
+              <input id="lastName" class="form-control" type="text" placeholder="Enter last name" />
+            </div>
+          </div>
+
+          <div class="d-flex flex-row gap-4">
+            <div class="mb-3 w-50">
+              <label class="form-label" for="email">Email</label>
+              <input id="email" class="form-control" type="email" placeholder="Enter email address" />
+            </div>
+
+            <div class="mb-3 w-50">
+              <label class="form-label" for="phone">Phone</label>
+              <input id="phone" class="form-control" type="text" placeholder="Enter phone number" />
+            </div>
+          </div>
+
+          <div class="d-flex flex-row gap-4">
+            <div class="mb-3 w-50">
+              <label class="form-label" for="username">Username</label>
+              <input id="username" class="form-control" type="text" placeholder="Enter username" />
+            </div>
+
+            <div class="mb-3 w-50">
+              <label class="form-label" for="password">Password</label>
+              <input id="password" class="form-control" type="password" placeholder="Enter password" />
+            </div>
+          </div>
+
+          <div class="w-100 d-flex flex-column gap-2">
+            <label class="form-label mb-0">Role</label>
+            <div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="isManager" />
+                <label class="form-check-label" for="isManager">Manager</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="isAdmin" />
+                <label class="form-check-label" for="isAdmin">Admin</label>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-end w-100 gap-4">
+            <div class="d-flex justify-content-end mt-4">
+              <a href="/staff.html" class="btn btn-outline-primary me-2">Cancel</a>
+              <button type="submit" class="btn btn-primary">
+                <svg class="bi pe-none me-2" width="16" height="16" fill="#FFFFFF">
+                  <use href="/assets/bootstrap-icons.svg#save" />
+                </svg>
+                Save staff
+              </button>
+            </div>
+          </div>
+        </form>
       </section>
     </main>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -12,7 +12,72 @@
     <main class="d-flex">
       {{> nav}}
       <section class="content p-4 flex-grow-1">
-        <!-- build your page content here — refer to _data.md for data -->
+        <!-- flex-column keeps our layout perfectly stacked -->
+        <form class="d-flex flex-column w-50 gap-3">
+          <!-- First Name / Last Name -->
+          <div class="d-flex flex-row gap-4">
+            <div class="w-50">
+              <label class="form-label" for="firstName">First Name</label>
+              <!-- value="..." pre-fills the input -->
+              <input id="firstName" class="form-control" type="text" value="Justin" />
+            </div>
+            <div class="w-50">
+              <label class="form-label" for="lastName">Last Name</label>
+              <input id="lastName" class="form-control" type="text" value="New" />
+            </div>
+          </div>
+
+          <!-- Email / Phone -->
+          <div class="d-flex flex-row gap-4">
+            <div class="w-50">
+              <label class="form-label" for="email">Email</label>
+              <input id="email" class="form-control" type="email" value="jnew@tql.com" />
+            </div>
+            <div class="w-50">
+              <label class="form-label" for="phone">Phone</label>
+              <input id="phone" class="form-control" type="text" value="(513) 370-0203)" />
+            </div>
+          </div>
+
+          <!-- Username / Password -->
+          <div class="d-flex flex-row gap-4">
+            <div class="w-50">
+              <label class="form-label" for="username">Username</label>
+              <input id="username" class="form-control" type="text" value="jnew" />
+            </div>
+            <div class="w-50">
+              <label class="form-label" for="password">Password</label>
+              <input id="password" class="form-control" type="password" value="password123" />
+            </div>
+          </div>
+
+          <!-- Role -->
+          <div class="w-100 d-flex flex-column gap-2">
+            <label class="form-label mb-0">Role</label>
+            <div>
+              <div class="form-check form-check-inline">
+                <!-- 'checked' instantly ticks the box on load -->
+                <input class="form-check-input" type="checkbox" id="isManager" checked />
+                <label class="form-check-label" for="isManager">Manager</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="isAdmin" checked />
+                <label class="form-check-label" for="isAdmin">Admin</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="d-flex justify-content-end w-100 gap-2 mt-3">
+            <a href="/staff.html" class="btn btn-outline-primary">Cancel</a>
+            <button type="submit" class="btn btn-primary d-flex align-items-center">
+              <svg class="bi pe-none me-2" width="16" height="16" fill="#FFFFFF">
+                <use href="/assets/bootstrap-icons.svg#save" />
+              </svg>
+              Save
+            </button>
+          </div>
+        </form>
       </section>
     </main>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

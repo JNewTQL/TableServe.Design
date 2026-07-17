@@ -12,20 +12,43 @@
     <main class="d-flex">
       {{> nav}}
       <section class="content p-4 flex-grow-1">
-        <div
-          class="d-flex justify-content-between pb-4 mb-4 border-bottom border-2"
-        >
-          <h2>Menu Items</h2>
-          <a href="/menuitem-create.html">
-            <svg class="bi pe-none me-2" width="32" height="32" fill="#FFFFFF">
-              <use href="/assets/bootstrap-icons.svg#plus" />
-            </svg>
-            Add Item
-          </a>
-        </div>
-      </section>
-    </main>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <form class="d-flex flex-column w-75">
+          <div class="d-flex flex-row gap-4">
+            <div class="mb-3 w-75">
+              <label for="name" class="form-label">Name</label>
+              <input id="name" class="form-control" type="text" placeholder="Enter menu item name" />
+            </div>
+
+            <div class="mb-3 w-25">
+              <label for="price" class="form-label">Price</label>
+              <input type="number" class="form-control" name="" step="0.01" id="price" placeholder="Enter price" />
+            </div>
+          </div>
+          <div class="d-flex flex-row gap-4">
+            <div class="mb-3 w-50">
+              <label for="category" class="form-label">Category</label>
+              <select id="category" class="form-select">
+                <option value="">Select Category...</option>
+                <option value="1">Appetizers</option>
+                <option value="2">Entrees</option>
+                <option value="3">Sides</option>
+                <option value="4">Desserts</option>
+                <option value="5">Drinks</option>
+              </select>
+            </div>
+          </div>
+          <div class="row-3 d-flex flex-row justify-content-end w-100 gap-4">
+            <div class="d-flex justify-content-end mt-4">
+              <a href="/menuitems.html" class="btn btn-outline-primary me-2">Cancel</a>
+              <button type="submit" class="btn btn-primary">
+                <svg class="bi pe-none me-2" width="16" height="16" fill="#FFFFFF">
+                  <use href="/assets/bootstrap-icons.svg#save" />
+                </svg>
+                Save menu item
+              </button>
+            </div>
+          </div>
+        </form>
       </section>
     </main>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
