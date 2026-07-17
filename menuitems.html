@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TableServe — Menu Items</title>
-    <link
-      rel="stylesheet"
-      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
@@ -15,7 +12,272 @@
     <main class="d-flex">
       {{> nav}}
       <section class="content p-4 flex-grow-1">
-        <!-- build your page content here — refer to _data.md for data -->
+        <section class="list d-flex flex-row flex-wrap bg-light gap-5 p-4 rounded-4">
+          <div class="card" style="width: 23rem">
+            <div class="progress"><div class="progress-bar bg-primary-subtle" role="progressbar" style="width: 30%"></div></div>
+            <div class="py-4 px-4">
+              <div class="d-flex justify-content-end">
+                <div class="dropdown d-inline">
+                  <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                      <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/menuitem-edit.html">Edit</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteMenuItemModal">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <span class="fs-4 lh-l fw-medium">Loaded Nachos</span><br />
+              <span class="fs-5 fw-light">$9.99</span><br />
+              <div class="badge text-secondary bg-primary-subtle mt-5">Appetizers</div>
+            </div>
+          </div>
+          <div class="card" style="width: 23rem">
+            <div class="progress"><div class="progress-bar bg-primary-subtle" role="progressbar" style="width: 30%"></div></div>
+            <div class="py-4 px-4">
+              <div class="d-flex justify-content-end">
+                <div class="dropdown d-inline">
+                  <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                      <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/menuitem-edit.html">Edit</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteMenuItemModal">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <span class="fs-4 lh-l fw-medium">Mozarella Sticks</span><br />
+              <span class="fs-5 fw-light">$7.49</span><br />
+              <div class="badge text-secondary bg-primary-subtle mt-5">Appetizers</div>
+            </div>
+          </div>
+          <div class="card" style="width: 23rem">
+            <div class="progress"><div class="progress-bar bg-primary-subtle" role="progressbar" style="width: 30%"></div></div>
+            <div class="py-4 px-4">
+              <div class="d-flex justify-content-end">
+                <div class="dropdown d-inline">
+                  <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                      <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/menuitem-edit.html">Edit</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteMenuItemModal">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <span class="fs-4 lh-l fw-medium">Buffalo Wings</span><br />
+              <span class="fs-5 fw-light">$11.99</span><br />
+              <div class="badge text-secondary bg-primary-subtle mt-5">Appetizers</div>
+            </div>
+          </div>
+          <div class="card" style="width: 23rem">
+            <div class="progress"><div class="progress-bar bg-primary-subtle" role="progressbar" style="width: 30%"></div></div>
+            <div class="py-4 px-4">
+              <div class="d-flex justify-content-end">
+                <div class="dropdown d-inline">
+                  <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                      <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/menuitem-edit.html">Edit</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteMenuItemModal">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <span class="fs-4 lh-l fw-medium">Grilled Salmon</span><br />
+              <span class="fs-5 fw-light">$18.99</span><br />
+              <div class="badge text-secondary bg-primary-subtle mt-5">Entrees</div>
+            </div>
+          </div>
+          <div class="card" style="width: 23rem">
+            <div class="progress"><div class="progress-bar bg-primary-subtle" role="progressbar" style="width: 30%"></div></div>
+            <div class="py-4 px-4">
+              <div class="d-flex justify-content-end">
+                <div class="dropdown d-inline">
+                  <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                      <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/menuitem-edit.html">Edit</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteMenuItemModal">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <span class="fs-4 lh-l fw-medium">Ribeye Steak</span><br />
+              <span class="fs-5 fw-light">$24.99</span><br />
+              <div class="badge text-secondary bg-primary-subtle mt-5">Entrees</div>
+            </div>
+          </div>
+          <div class="card" style="width: 23rem">
+            <div class="progress"><div class="progress-bar bg-primary-subtle" role="progressbar" style="width: 30%"></div></div>
+            <div class="py-4 px-4">
+              <div class="d-flex justify-content-end">
+                <div class="dropdown d-inline">
+                  <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                      <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/menuitem-edit.html">Edit</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteMenuItemModal">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <span class="fs-4 lh-l fw-medium">Chicken Alfredo</span><br />
+              <span class="fs-5 fw-light">$15.99</span><br />
+              <div class="badge text-secondary bg-primary-subtle mt-5">Entrees</div>
+            </div>
+          </div>
+          <div class="card" style="width: 23rem">
+            <div class="progress"><div class="progress-bar bg-primary-subtle" role="progressbar" style="width: 30%"></div></div>
+            <div class="py-4 px-4">
+              <div class="d-flex justify-content-end">
+                <div class="dropdown d-inline">
+                  <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                      <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/menuitem-edit.html">Edit</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteMenuItemModal">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <span class="fs-4 lh-l fw-medium">Garlic Fries</span><br />
+              <span class="fs-5 fw-light">$5.49</span><br />
+              <div class="badge text-secondary bg-primary-subtle mt-5">Sides</div>
+            </div>
+          </div>
+          <div class="card" style="width: 23rem">
+            <div class="progress"><div class="progress-bar bg-primary-subtle" role="progressbar" style="width: 30%"></div></div>
+            <div class="py-4 px-4">
+              <div class="d-flex justify-content-end">
+                <div class="dropdown d-inline">
+                  <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                      <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/menuitem-edit.html">Edit</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteMenuItemModal">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <span class="fs-4 lh-l fw-medium">Side Caesar Salad</span><br />
+              <span class="fs-5 fw-light">$4.99</span><br />
+              <div class="badge text-secondary bg-primary-subtle mt-5">Sides</div>
+            </div>
+          </div>
+          <div class="card" style="width: 23rem">
+            <div class="progress"><div class="progress-bar bg-primary-subtle" role="progressbar" style="width: 30%"></div></div>
+            <div class="py-4 px-4">
+              <div class="d-flex justify-content-end">
+                <div class="dropdown d-inline">
+                  <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                      <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/menuitem-edit.html">Edit</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteMenuItemModal">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <span class="fs-4 lh-l fw-medium">Chocolate Lava Cake</span><br />
+              <span class="fs-5 fw-light">$7.99</span><br />
+              <div class="badge text-secondary bg-primary-subtle mt-5">Desserts</div>
+            </div>
+          </div>
+          <div class="card" style="width: 23rem">
+            <div class="progress"><div class="progress-bar bg-primary-subtle" role="progressbar" style="width: 30%"></div></div>
+            <div class="py-4 px-4">
+              <div class="d-flex justify-content-end">
+                <div class="dropdown d-inline">
+                  <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                      <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/menuitem-edit.html">Edit</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteMenuItemModal">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <span class="fs-4 lh-l fw-medium">New York Cheesecake</span><br />
+              <span class="fs-5 fw-light">$6.99</span><br />
+              <div class="badge text-secondary bg-primary-subtle mt-5">Desserts</div>
+            </div>
+          </div>
+          <div class="card" style="width: 23rem">
+            <div class="progress"><div class="progress-bar bg-primary-subtle" role="progressbar" style="width: 30%"></div></div>
+            <div class="py-4 px-4">
+              <div class="d-flex justify-content-end">
+                <div class="dropdown d-inline">
+                  <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                      <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/menuitem-edit.html">Edit</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteMenuItemModal">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <span class="fs-4 lh-l fw-medium">Iced Tea</span><br />
+              <span class="fs-5 fw-light">$2.99</span><br />
+              <div class="badge text-secondary bg-primary-subtle mt-5">Drinks</div>
+            </div>
+          </div>
+          <div class="card" style="width: 23rem">
+            <div class="progress"><div class="progress-bar bg-primary-subtle" role="progressbar" style="width: 30%"></div></div>
+            <div class="py-4 px-4">
+              <div class="d-flex justify-content-end">
+                <div class="dropdown d-inline">
+                  <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                      <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/menuitem-edit.html">Edit</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteMenuItemModal">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <span class="fs-4 lh-l fw-medium">Craft Lemonade</span><br />
+              <span class="fs-5 fw-light">$3.49</span><br />
+              <div class="badge text-secondary bg-primary-subtle mt-5">Drinks</div>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

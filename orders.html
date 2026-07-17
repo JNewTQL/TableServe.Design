@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TableServe — Orders</title>
-    <link
-      rel="stylesheet"
-      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
@@ -15,9 +12,7 @@
     <main class="d-flex">
       {{> nav}}
       <section class="content p-4 flex-grow-1">
-        <div
-          class="d-flex justify-content-between pb-4 mb-4 border-bottom border-2"
-        >
+        <div class="d-flex justify-content-between pb-4 mb-4 border-bottom border-2">
           <h2>Orders</h2>
           <a href="/order-create.html" class="btn btn-primary">
             <svg class="bi pe-none me-2" width="32" height="32" fill="#FFFFFF">
@@ -38,9 +33,7 @@
             <option value="CANCELLED">Cancelled</option>
           </select>
         </div>
-        <section
-          class="list d-flex flex-row flex-wrap bg-body-tertiary gap-5 p-4 rounded-4"
-        >
+        <section class="list d-flex flex-row flex-wrap bg-body-tertiary gap-5 p-4 rounded-4">
           <table class="table table-hover w-100 rounded-4">
             <thead>
               <tr>
@@ -55,61 +48,205 @@
               </tr>
             </thead>
             <tbody>
+              <!-- Row 1: 201 -->
               <tr>
                 <th scope="row">201</th>
                 <td>4</td>
-                <td class="text-body-secondary small text-wrap">
-                  No onions please
-                </td>
+                <td class="text-body-secondary small text-wrap">No onions please</td>
                 <td><span class="badge text-bg-secondary">PLACED</span></td>
                 <td>$23.98</td>
                 <td>Casey Nguyen</td>
                 <td>6:05 PM</td>
                 <td>
                   <div class="dropdown d-inline">
-                    <button
-                      class="btn btn-light"
-                      style="background: none"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <svg
-                        class="bi pe-none me-2"
-                        width="20"
-                        height="20"
-                        fill="#007AFF"
-                      >
-                        <use
-                          href="/assets/bootstrap-icons.svg#three-dots-vertical"
-                        />
+                    <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                        <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
                       </svg>
                     </button>
                     <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="/order-detail.html"
-                          >View</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="/order-edit.html"
-                          >Edit</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="#"
-                          data-bs-toggle="modal"
-                          data-bs-target="#deleteOrderModal"
-                          >Delete</a
-                        >
-                      </li>
+                      <li><a class="dropdown-item" href="/order-detail.html">View</a></li>
+                      <li><a class="dropdown-item" href="/order-edit.html">Edit</a></li>
+                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteOrderModal">Delete</a></li>
                     </ul>
                   </div>
                 </td>
               </tr>
-              <!-- more <tr> rows, one per order -->
+
+              <!-- Row 2: 202 -->
+              <tr>
+                <th scope="row">202</th>
+                <td>12</td>
+                <td class="text-body-secondary small text-wrap">—</td>
+                <td><span class="badge text-bg-warning">PREPARING</span></td>
+                <td>$42.95</td>
+                <td>Avery Brooks</td>
+                <td>6:12 PM</td>
+                <td>
+                  <div class="dropdown d-inline">
+                    <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                        <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/order-detail.html">View</a></li>
+                      <li><a class="dropdown-item" href="/order-edit.html">Edit</a></li>
+                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteOrderModal">Delete</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Row 3: 203 -->
+              <tr>
+                <th scope="row">203</th>
+                <td>7</td>
+                <td class="text-body-secondary small text-wrap">Birthday - bring candle</td>
+                <td><span class="badge text-bg-success">READY</span></td>
+                <td>$18.99</td>
+                <td>Jordan Reyes</td>
+                <td>6:20 PM</td>
+                <td>
+                  <div class="dropdown d-inline">
+                    <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                        <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/order-detail.html">View</a></li>
+                      <li><a class="dropdown-item" href="/order-edit.html">Edit</a></li>
+                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteOrderModal">Delete</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Row 4: 204 -->
+              <tr>
+                <th scope="row">204</th>
+                <td>2</td>
+                <td class="text-body-secondary small text-wrap">—</td>
+                <td><span class="badge text-bg-primary">SERVED</span></td>
+                <td>$32.98</td>
+                <td>Casey Nguyen</td>
+                <td>5:45 PM</td>
+                <td>
+                  <div class="dropdown d-inline">
+                    <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                        <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/order-detail.html">View</a></li>
+                      <li><a class="dropdown-item" href="/order-edit.html">Edit</a></li>
+                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteOrderModal">Delete</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Row 5: 205 -->
+              <tr>
+                <th scope="row">205</th>
+                <td>9</td>
+                <td class="text-body-secondary small text-wrap">Allergic to peanuts</td>
+                <td><span class="badge text-bg-danger">CANCELLED</span></td>
+                <td>$15.99</td>
+                <td>Avery Brooks</td>
+                <td>5:30 PM</td>
+                <td>
+                  <div class="dropdown d-inline">
+                    <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                        <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/order-detail.html">View</a></li>
+                      <li><a class="dropdown-item" href="/order-edit.html">Edit</a></li>
+                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteOrderModal">Delete</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Row 6: 206 -->
+              <tr>
+                <th scope="row">206</th>
+                <td>15</td>
+                <td class="text-body-secondary small text-wrap">—</td>
+                <td><span class="badge text-bg-secondary">PLACED</span></td>
+                <td>$9.99</td>
+                <td>Jordan Reyes</td>
+                <td>6:30 PM</td>
+                <td>
+                  <div class="dropdown d-inline">
+                    <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                        <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/order-detail.html">View</a></li>
+                      <li><a class="dropdown-item" href="/order-edit.html">Edit</a></li>
+                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteOrderModal">Delete</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Row 7: 207 -->
+              <tr>
+                <th scope="row">207</th>
+                <td>3</td>
+                <td class="text-body-secondary small text-wrap">Extra napkins</td>
+                <td><span class="badge text-bg-warning">PREPARING</span></td>
+                <td>$27.48</td>
+                <td>Casey Nguyen</td>
+                <td>6:15 PM</td>
+                <td>
+                  <div class="dropdown d-inline">
+                    <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                        <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/order-detail.html">View</a></li>
+                      <li><a class="dropdown-item" href="/order-edit.html">Edit</a></li>
+                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteOrderModal">Delete</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Row 8: 208 -->
+              <tr>
+                <th scope="row">208</th>
+                <td>6</td>
+                <td class="text-body-secondary small text-wrap">—</td>
+                <td><span class="badge text-bg-primary">SERVED</span></td>
+                <td>$45.97</td>
+                <td>Avery Brooks</td>
+                <td>5:50 PM</td>
+                <td>
+                  <div class="dropdown d-inline">
+                    <button class="btn btn-light" style="background: none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg class="bi pe-none me-2" width="20" height="20" fill="#007AFF">
+                        <use href="/assets/bootstrap-icons.svg#three-dots-vertical" />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/order-detail.html">View</a></li>
+                      <li><a class="dropdown-item" href="/order-edit.html">Edit</a></li>
+                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteOrderModal">Delete</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
             </tbody>
           </table>
         </section>
