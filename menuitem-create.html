@@ -12,22 +12,24 @@
     <main class="d-flex">
       {{> nav}}
       <section class="content p-4 flex-grow-1">
-        <form class="d-flex flex-column w-75">
+        <form class="d-flex flex-column w-75" novalidate data-success="/menuitems.html">
           <div class="d-flex flex-row gap-4">
             <div class="mb-3 w-75">
               <label for="name" class="form-label">Name</label>
-              <input id="name" class="form-control" type="text" placeholder="Enter menu item name" />
+              <input id="name" class="form-control" type="text" placeholder="Enter menu item name" required />
+              <div class="invalid-feedback">Name is required</div>
             </div>
 
             <div class="mb-3 w-25">
               <label for="price" class="form-label">Price</label>
-              <input type="number" class="form-control" name="" step="0.01" id="price" placeholder="Enter price" />
+              <input type="number" class="form-control" name="" step="0.01" id="price" placeholder="Enter price" required />
+              <div class="invalid-feedback">Price is required</div>
             </div>
           </div>
           <div class="d-flex flex-row gap-4">
             <div class="mb-3 w-50">
               <label for="category" class="form-label">Category</label>
-              <select id="category" class="form-select">
+              <select id="category" class="form-select" required>
                 <option value="">Select Category...</option>
                 <option value="1">Appetizers</option>
                 <option value="2">Entrees</option>
@@ -35,6 +37,7 @@
                 <option value="4">Desserts</option>
                 <option value="5">Drinks</option>
               </select>
+              <div class="invalid-feedback">Category is required</div>
             </div>
           </div>
           <div class="row-3 d-flex flex-row justify-content-end w-100 gap-4">
@@ -52,5 +55,6 @@
       </section>
     </main>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/validation.js"></script>
   </body>
 </html>
